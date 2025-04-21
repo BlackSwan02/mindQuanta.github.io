@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MindQuanta - Roadmap</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0a0a0a;
+      color: #f0f0f0;
+      padding: 2rem;
+      text-align: center;
+    }
+    h1 {
+      color: #58d6ff;
+      margin-bottom: 2rem;
+    }
+    .step {
+      display: none;
+      border-left: 4px solid #58d6ff;
+      margin: 0 auto 2rem auto;
+      padding: 1rem 1.5rem;
+      background-color: #1a1a1a;
+      border-radius: 8px;
+      max-width: 600px;
+    }
+    .step.active {
+      display: block;
+    }
+    .step h2 {
+      color: #ffffff;
+    }
+    .step p {
+      color: #bbbbbb;
+    }
+    button {
+      background-color: #58d6ff;
+      color: #000;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #30c0ff;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🧠 MindQuanta: Quant Project Roadmap</h1>
+
+  <div class="step active">
+    <h2>🔹 Step 01. 나만의 포트폴리오</h2>
+    <p>📂 공개 예정 - 전략 설명, 리스크 관리 방법, 투자 논리 등 정리 예정입니다.</p>
+  </div>
+
+  <div class="step">
+    <h2>🔹 Step 02. 포트폴리오 수익률</h2>
+    <p>📊 공개 예정 - 백테스트 결과, 실전 성과 차트와 데이터 포함 예정입니다.</p>
+  </div>
+
+  <div class="step">
+    <h2>🔹 Step 03. 펀딩</h2>
+    <p>💰 추후 공개 예정 - 프로젝트와 전략 성과 기반 펀딩 계획을 준비 중입니다.</p>
+  </div>
+
+  <button onclick="nextStep()">다음 단계 ▶</button>
+
+  <script>
+    let currentStep = 0;
+    const steps = document.querySelectorAll('.step');
+
+    function nextStep() {
+      steps[currentStep].classList.remove('active');
+      currentStep = (currentStep + 1) % steps.length;
+      steps[currentStep].classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
