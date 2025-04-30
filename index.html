@@ -3,62 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MindQuanta | Quantitative Research</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #0c1a2b;
-      color: #e0e0e0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
-    }
-    h1 {
-      font-size: 2.5rem;
-      color: #fff;
-      margin-bottom: 1rem;
-    }
-    p {
-      font-size: 1.2rem;
-      color: #c0c0c0;
-      max-width: 600px;
-      margin: 0 auto 2rem;
-    }
-    footer {
-      position: absolute;
-      bottom: 20px;
-      font-size: 0.9rem;
-      color: #666;
-    }
-    .btn {
-      background-color: #1a73e8;
-      color: white;
-      padding: 0.6rem 1.4rem;
-      border: none;
-      border-radius: 4px;
-      font-size: 1rem;
-      cursor: pointer;
-      text-decoration: none;
-    }
-    .btn:hover {
-      background-color: #155ec2;
-    }
-  </style>
+  <title>Talk to an Advisor</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <h1>MindQuanta</h1>
-  <p>
-    A new frontier in quantitative finance.<br>
-    We are currently building the next generation of algorithmic investment strategies.<br><br>
-    With HanMyeong.co
-  </p>
-  <a href="#" class="btn">Learn More</a>
-  <footer>
-    &copy; 2025 MindQuanta. All Rights Reserved.
-  </footer>
-</body>
-</html>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold">YourFirm</div>
+      <nav class="space-x-4">
+        <a href="#" class="hover:text-blue-600">How We Invest</a>
+        <a href="#" class="hover:text-blue-600">Our Services</a>
+        <a href="#" class="hover:text-blue-600">Work With Us</a>
+        <a href="#" class="hover:text-blue-600">Who We Are</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Multi-step form -->
+  <main class="container mx-auto px-6 py-10">
+    <h1 class="text-3xl font-semibold mb-6">Connect with an Advisor</h1>
+    <form id="advisorForm" class="bg-white p-8 rounded-lg shadow-md">
+      <!-- Step 1 -->
+      <div class="step" data-step="1">
+        <label class="block mb-2">Name*</n
